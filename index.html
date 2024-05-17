@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <script>
+            // When the user clicks on <div>, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script>
+        <style>
+ /* Popup container */
+ .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 660px;
+  background-color: #af54c2;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 58%;
+  margin-left: -50px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c5b3b3 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
+
+
+
+
+            header {background-color: rgb(123, 40, 201);
+                    padding: 50px;
+                    height: 140px;
+                    color: aliceblue;
+                    font-size: medium;
+                }
+            nav{    
+                    text-align: right;
+                    
+            }
+
+            a{text-decoration:none;
+                color: rgb(18, 100, 172);}
+
+            #m1{  color: aliceblue; }
+            #m2{  color: aliceblue;}
+            #m3{  color: aliceblue;}
+            #m4{  color: aliceblue;}
+            
+            .grid-container {
+                 display: grid;
+                 grid-template-columns: auto auto auto;
+                }
+
+            #IMA1{
+                padding: 20PX;
+            }
+            
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 50px;
+                font-size: 30px;
+                
+                }
+
+                #grinch{border: 1px solid #a8a8a8;}
+
+                button{
+                    background-color: rgb(240, 232, 232); /* Green */
+                    border: rgb(123, 40, 201);
+                     color: rgb(97, 5, 5);
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+
+            #skills,#PROJECTS,#myname,#RECOMEND{
+                color:  rgb(123, 40, 201);
+                font-style: italic;
+            }
+
+
+        </style>
+
+
+    <title>FINAL PROJECT KAREN GRANADOS
+    </title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/f24482d9d7.js" crossorigin="anonymous"></script>
+    
+    <header>
+
+        <nav id="volver">
+            <h2> <a id="m1" href="#D1">About Me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+             <a id="m2" href="#D2">Skills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+             <a id="m3" href="#D3">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      
+     </nav>
+
+
+        <h2><b>KAREN CECILIA GRANADOS RODRÍGUEZ </b></h2>
+        <h3>
+        <i class="far fa-address-card"> </i>  kgranados536@gmail.com  <br>
+        <i class="fas fa-bullhorn"> </i></i><a href="https://www.linkedin.com/in/karen-cecilia-granados-rodr%C3%ADguez-7b509b224/" target="_blank"> Linkedin</a><br>
+        <i class="fas fa-phone"> </i> 4611273663</h3>
+        
+      
+    </header>
+
+
+</head>
+
+<body>
+            <div id="D1"class="grid-container">
+                <div class="grid-item"><img id="IMA1" src="IMAGEN1.png" ></div>
+                <div class="grid-item"><BR><BR><BR><div id="myname"><h1>Hi! I'm KAREN GRANADOS! <i class="fab fa-angellist"></i></h1></div>
+                    I am a full stack developer with 8 years of experience in both applications and presentation layers.<br>
+                    I am currently in charge of 15 developers as a Project Leader in the IT office of the local government of my City Celaya Guanajuato Mexico.<br>
+                    Working in the government is an opportunity to do something for my country and one of my dreams is for Celaya to have fully digital services for its citizens.
+                    </div>
+            </div>
+
+            <div id="D2">
+                <di  class="grid-container">
+                <div class="grid-item">
+                    <div id="skills"><h1>SKILLS</h1></div>
+                </div>
+            </di>
+            <di  class="grid-container">
+               
+                <div class="grid-item">
+                    <figure>
+                    <img src="net.png" width="200px">
+                    <figcaption>VB.NET ASP Y WINDOWS FORM<br>6 YEARS EXPERIENCE</figcaption>
+                </figure>
+                </div>
+                <div class="grid-item">
+                    <figure>
+                    <img src="PHPP.png" width="150px">
+                    <figcaption>WEB DEVELOPER<br>8 YEARS EXPERIENCE</figcaption>
+                </figure>
+                </div>
+                <div class="grid-item">
+                    <figure>
+                    <img src="SQL.jpg" width="280px">
+                    <figcaption>DATA BASES, STORED PROCEDURES, TRIGGERS, FUNCTIONS<br>8 YEARS EXPERIENCE</figcaption>
+                </figure>
+                </div>
+                          </di>
+            <di  class="grid-container">
+                
+                <!--div class="grid-item">
+                    <figure>
+                    <img src="CGATO.png" width="100px">
+                    <figcaption>BLAZOR .NET CORE <br>2 YEARS EXPERIENCE</figcaption>
+                </figure>
+                </div-->
+                <div class="grid-item">
+                    <figure>
+                    <img src="WEB.jpg" width="150px">
+                    <figcaption>HTML5, JS, CSS<br>8 YEARS EXPERIENCE</figcaption>
+                </figure>
+                </div>
+                <div class="grid-item">
+                    <figure>
+                   <img src="java.png" width="200px">
+                   <figcaption>5 YEARS EXPERIENCE</figcaption>
+                </figure>
+                </div>
+               
+            </di>
+            <div class="grid-item">
+                <a href="#volver"> <i class="material-icons">Go Back</i></a>
+            </div>
+            </div>
+
+            <div id="D3">
+                <di  class="grid-container">
+                    <div class="grid-item">
+                        <div id="PROJECTS"><H1>PROJECTS</H1></div>
+                    </div>
+                </di>
+
+                <di  class="grid-container">
+                    <div class="grid-item">
+                        <div id="PROJECTS"> CAJAS & SARI</div><BR>
+                        <I>System for tax collection of the city of celaya on topics of the income law and property tax.</I><BR>
+                        <figure>
+                            <img src="CAJAS.png" width="550px">
+                            <figcaption>WINDOWS FORM VB.NET <br>Since 2018 patented as intellectual property of celaya, with my participation as co-authorship. <BR>ID 3-2023-041811134500-01<br> ID 3-2023-041811454300-01</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-item">
+                      
+                     </div>  
+
+                    <div class="grid-item">
+                        <div id="PROJECTS">SAR TICKETS DE SERVICIO</div> <BR>
+                            <i>System to raise it service reports for user service.</i> <a href="http://td.celaya.biz:8037/Index.aspx" target="_blank">Here!</a>
+                            <figure>
+                                <img src="sar.png" width="850px">
+                                <figcaption>ASP VB.NET, BOOSTRAP, DB SQL, BOOSTRAP<br>Since 2019 patented as intellectual property of celaya, with my participation as co-authorship <BR>ID 03-2023-041810353600-01</figcaption>
+                            </figure>
+                    </div>
+                   
+                </di>
+
+               
+                <di  class="grid-container">
+                    <div class="grid-item">
+                        <div id="PROJECTS"> AVALUOS FISCALES CELAYA</div><BR>
+                        <I>Property valuation system.</I> <a href="http://td.celaya.biz:8081/celayaAvaluos/" target="_blank">  Here!</a><BR>
+                        <figure>
+                            <figcaption>php, BOOSTRAP DB SQL<br>Since 2018 patented as intellectual property of celaya, with my participation as co-authorship <BR>ID 03-2023-041811253800-01</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-item">
+                      
+                     </div>  
+
+                    <div class="grid-item">
+                        <div id="PROJECTS">BECAS MUNICIPALES CELAYA</div> <BR>
+                            <i>System for application for scholarships for basic and middle education.</i> <a href="https://becas.celaya.gob.mx/" target="_blank"> Here!</a>
+                            <figure>
+                               
+                                <figcaption>ASP VB.NET, BOOSTRAP, DB SQL, BOOSTRAP<br>Since 2020 patented as intellectual property of celaya, with my participation as co-authorship <BR>ID 3-2023-041812161400-01</figcaption>
+                            </figure>
+                    </div>
+                
+                </di>
+
+                <di  class="grid-container">
+                    <div class="grid-item">
+                        <div id="PROJECTS"> VIATICOS PARA UN CELAYA TRANSPARENTE</div><BR>
+                        <I>System for the registration and access to information on the travel expenses that public servants spend on their work travel.</I><a href="http://td.celaya.biz:8024/CelayaTransparente/enlaces/" target="_blank">  Here!</a><BR>
+                        <figure>
+                            <figcaption>php ,BOOSTRAP, DB mySQL<br>Since 2018 patented as intellectual property of celaya, with my participation as co-authorship <BR>ID 03-2023-041810324400-01</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-item">
+                      
+                     </div>  
+
+                    <div class="grid-item">
+                        <div id="PROJECTS">MUNICIPIO DE CELAYA COORDINACIÓN DE SOFTWARE</div> <BR>
+                            <i>As a project leader, my participation in other developments is constant: solutions or microservices, backend developer, interface design, requirements gathering as well as data analysis and process analysis.
+                                <BR><BR>
+                                But above all lead a team.
+                                                        
+                    </div>
+                
+                </di>
+
+                <div class="grid-item">
+                    <a href="#volver"> <i class="material-icons">Go Back</i></a>
+                </div>
+            </div>
+
+         
+
+
+            
+
+
+
+</body>
+
+</html>
+
+    
